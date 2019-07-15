@@ -5,7 +5,9 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic-console',
-    'basePath' => dirname(__DIR__),
+    'basePath' => dirname(__DIR__) . '/src',
+    'vendorPath' => dirname(__DIR__) . '/vendor',
+    'runtimePath' => dirname(__DIR__) . '/runtime',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'app\commands',
     'aliases' => [
