@@ -1,32 +1,17 @@
 <?php
-/**
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- */
 
 namespace app\assets;
 
 use yii\helpers\Json;
 use yii\web\AssetBundle;
 
-/**
- * Main application asset bundle.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
- */
-class AppAsset extends AssetBundle
+class Yii2DebugAsset extends AssetBundle
 {
     public $basePath = '@webroot/assets/build';
     public $baseUrl = '@web/assets/build';
 
     public $entryPointsFile = '@webroot/assets/build/entrypoints.json';
-    public $entryPoint = 'app';
-
-    public $depends = [
-//        'yii\web\YiiAsset',
-    ];
+    public $entryPoint = 'yii2-debug';
 
     public function publish($am)
     {

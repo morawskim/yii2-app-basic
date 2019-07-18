@@ -1,0 +1,1 @@
+import '../../../vendor/npm-asset/bootstrap/dist/js/bootstrap.bundle.js'
