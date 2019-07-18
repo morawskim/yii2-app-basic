@@ -1,11 +1,13 @@
 <?php
 
+use yii\db\Connection;
+
 return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '',
-    'charset' => 'utf8',
+    'class' => Connection::class,
+    'dsn' => getenv('DB_DSN'),
+    'username' => getenv('DB_USER'),
+    'password' => getenv('DB_PASSWORD'),
+    'charset' => getenv('DB_CHARSET'),
 
     // Schema cache options (for production environment)
     //'enableSchemaCache' => true,
