@@ -42,7 +42,7 @@ Encore
         "window.jQuery": 'jquery',
     })
 
-    // .enableReactPreset()
+    .enableReactPreset()
 ;
 
 module.exports = Encore.getWebpackConfig();
