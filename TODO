@@ -1,0 +1,20 @@
+* spr migracje
+* spr crud
+* spr model
+* podpiac gitlab-ci
+
+* docker-compose
+* vagrantfile z alpine i docker-compose
+
+* monolog zamiast yii log
+
+* saas bourbon
+
+
+*eslint z obsluga typescript i react (+aduit jak sie podaje niebezpieczny HTML)
+https://dev.to/jam3/how-to-prevent-xss-attacks-when-using-dangerouslysetinnerhtml-in-react-1464
+
+*zastepowanie phpmd
+https://github.com/shopsys/shopsys/search?q=phpmd&type=Commits
+
+*webpack-bundle-analyzer i symfony/encore

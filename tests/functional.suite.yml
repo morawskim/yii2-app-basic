@@ -10,4 +10,5 @@ class_name: FunctionalTester
 modules:
     enabled:
       - Filesystem
-      - Yii2
+      - Yii2:
+          entryUrl: 'http://localhost:8080/index-test.php'

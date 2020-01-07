@@ -32,15 +32,17 @@ class AppAsset extends AssetBundle
     {
         //todo mmo przeniesc do odzielnego pakietu. Obsluga bledow
         $path = \Yii::getAlias($this->entryPointsFile);
-        $content = file_get_contents($path);
-        $entryPoints = Json::decode($content);
-        $data = $entryPoints['entrypoints'][$this->entryPoint];
-        if (isset($data['js']) && is_array($data['js'])) {
-            $this->js = $data['js'];
+        if (is_readable($path)) {
+            $content = file_get_contents($path);
+            $entryPoints = Json::decode($content);
+            $data = $entryPoints['entrypoints'][$this->entryPoint];
+            if (isset($data['js']) && is_array($data['js'])) {
+                $this->js = $data['js'];
+            }
+            if (isset($data['css']) && is_array($data['css'])) {
+                $this->css = $data['css'];
+            }
+            parent::publish($am);
         }
-        if (isset($data['css']) && is_array($data['css'])) {
-            $this->css = $data['css'];
-        }
-        parent::publish($am);
     }
 }

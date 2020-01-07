@@ -22,7 +22,7 @@ $config = [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => app\models\User::class,
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -126,14 +126,12 @@ $config = [
                 ]
             ],
         ],
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
